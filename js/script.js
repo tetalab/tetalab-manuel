@@ -5,13 +5,13 @@ $(document).ready(function() {
 
   $("#map a").popover({html: true});
 
-  $("#map a").mouseover(function(){
+  $("#map a[rel=popover]").mouseover(function(){
     $("#location-pin").attr("style", $(this).data("position"));
     $("#location-pin").show();
     $(this).popover('show');
   });
 
-  $("#map a").mouseout(function(){
+  $("#map a[rel=popover]").mouseout(function(){
     $(this).popover('hide');
     $("#location-pin").hide();
   });
