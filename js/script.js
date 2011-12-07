@@ -7,11 +7,12 @@ $(document).ready(function() {
 
   $("#map a").mouseover(function(){
     $("#location-pin").attr("style", $(this).data("position"));
+    $("#location-pin").show();
     $(this).popover('show');
   });
 
   $("#map a").mouseout(function(){
     $(this).popover('hide');
-    $("#location-pin").attr("style", "position:relative;top:-400px;left:-660px;");
+    $("#location-pin").hide();
   });
 });
