@@ -3,7 +3,7 @@
 */
 $(document).ready(function() {
 
-  $('.modal').modal({keyboard: true});
+  $('.modal').modal({backdrop: "static", keyboard: true});
 
   $("#map a").popover({html: true});
 
