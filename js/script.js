@@ -3,6 +3,8 @@
 */
 $(document).ready(function() {
 
+  $('.modal').modal({keyboard: true});
+
   $("#map a").popover({html: true});
 
   $("#map a[rel=popover]").mouseover(function(){
