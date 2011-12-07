@@ -25,6 +25,7 @@
     body { padding-top: 60px; }
     section { padding-top: 60px; }
     .sidebar li.active a {background: #0069d6; color: #FFF;}
+    #map a {cursor: pointer;}
   </style>
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -132,26 +133,30 @@
       <section id="map">
         <div class="page-header"><h1>Carte du coin <small>comment se nourrir et boire entre 2 hacks?</small></h1></div>
         <div class="row">
-          <div class="span8">
+          <div class="span5">
             <h4>Manger</h4>
             <ul>
-              <li><a href="#" data-position="position:relative;top:-290px;left:-660px;">Simply Market</a></li>
-              <li><a href="#" data-position="position:relative;top:-405px;left:-615px;">Boboon</a>
-                <ul>
-                  <li>Tél: 05 61 13 82 75</li>
-                  <li>compter 15-20 min.</li>
-                </ul>
-              </li>
-              <li><a href="#" data-position="position:relative;top:-395px;left:-625px;">Pizza</a></li>
+              <li><a data-position="position:relative;top:-290px;left:-660px;">Simply Market</a></li>
+              <li><a data-position="position:relative;top:-405px;left:-615px;" data-original-title="Détails" data-content="Fermeture: 22h<br>Tél: 05 61 13 82 75<br>Compter 15-20 min." rel="popover">Boboon</a></li>
+              <li><a href="http://lapaniolade.com/" data-position="position:relative;top:-395px;left:-625px;" data-original-title="Détails" data-content="Tél: 05 61 13 00 72">Pizzeria La Paniolade</a></li>
             </ul>
           </div>
-          <div class="span8">
+          <div class="span5">
             <h4>Boire</h4>
             <ul>
               <li><a href="#" data-position="position:relative;top:10px;left:-470px;">Vasco le Gamma</a></li>
               <li><a href="#" data-position="position:relative;top:-260px;left:-320px;">Père Peinard</a></li>
               <li><a href="#" data-position="position:relative;top:-240px;left:-375px;">Le Communard</a></li>
               <li><a href="#" data-position="position:relative;top:-210px;left:-375px;">Le Breughel</a></li>
+            </ul>
+          </div>
+          <div class="span6">
+            <h4>Transport</h4>
+            <ul>
+              <li><a href="#">Bus: ligne 25</a></li>
+              <li><a href="#">Station Velib</a></li>
+              <li><a href="#">Metro, station Canal du Midi</a></li>
+              <li><a href="#">Parking, dans la cour de Myrys</a></li>
             </ul>
           </div>
         </div>
@@ -162,23 +167,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="span8">
+          <div class="span16">
             <h4>Matériel</h4>
             <ul>
               <li><a href="#">o10C</a></li>
               <li><a href="#">Bricoman</a></li>
             </ul>
-          </div>
-          <div class="span8">
-            <h4>Transport</h4>
-            <ul>
-              <li><a href="#">Bus: ligne 25</a></li>
-              <li><a href="#">Station Velib</a></li>
-              <li><a href="#">Metro, station Canal du Midi</a></li>
-              <li><a href="#">Parking, dans la cour de Myrys</a></li>
-            </ul>
-          </div>
         </div>
+      </div>
       </section>
 
       <section id="online">
@@ -540,6 +536,8 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <script src="js/bootstrap-scrollspy.js"></script>
+  <script src="js/bootstrap-twipsy.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
 
   <!-- scripts concatenated and minified via build script -->
   <script defer src="js/plugins.js"></script>
